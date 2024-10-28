@@ -1,0 +1,99 @@
+/* Intro Component Styles */
+.intro-container {
+    color: white; /* White text */
+    padding: 3rem 1.5rem;
+  }
+  
+  .intro-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .intro-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .intro-images {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-image-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  
+  .intro-image {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+  }
+  
+  .intro-text {
+    text-align: left;
+    max-width: 600px;
+   
+  }
+  
+  .intro-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ef4444; /* Tailwind's red-500 color */
+  }
+  
+  .intro-description {
+    color: grey; /* Gray text for the description */
+    margin-top: 1rem;
+  }
+  
+  .intro-subheading {
+    margin-top: 2rem;
+    font-weight: 600;
+  }
+  
+  .intro-list {
+    margin-top: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .intro-list li {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .intro-list li::before {
+    content: '✔';
+    color: #ef4444;
+    margin-right: 0.5rem;
+  }
+  
+  .intro-button-container {
+    margin-top: 2rem;
+  }
+  
+  .intro-button {
+    background-color: #ef4444;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .intro-button:hover {
+    background-color: #dc2626;
+  }
+  
