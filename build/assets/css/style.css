@@ -533,25 +533,21 @@ BUTTONS STYLE
 }
 
 .btn-main {
-  background: var(--theme-primary-color);
-  color: #fff;
-  border-color: var(--theme-primary-color);
+  background: #F6AE2D;
+  color: #000;
 }
 .btn-main:hover {
-  border-color: var(--theme-secondary-color);
+  background: #F6AE2D;
   color: #fff;
-  background: var(--theme-secondary-color);
 }
 
 .btn-main-2 {
-  border-color: var(--theme-secondary-color);
+  background: #F6AE2D;
   color: #fff;
-  background: var(--theme-secondary-color);
 }
 .btn-main-2:hover {
-  background: var(--theme-primary-color);
+  background: #F6AE2D;
   color: #fff;
-  border-color: var(--theme-primary-color);
 }
 
 .btn-main-outline {
@@ -577,13 +573,12 @@ BUTTONS STYLE
 }
 
 .btn-white {
-  background: #fff;
-  border-color: #fff;
-  color: var(--theme-primary-color);
+  background: #F6AE2D;
+  color: #000;
 }
 .btn-white:hover {
-  border-color: var(--theme-primary-color);
-  color: #fff;
+  background: #F6AE2D;
+  color: #000;
   background: var(--theme-primary-color);
 }
 
@@ -2786,7 +2781,7 @@ portflio filter
   font-size: 18px;
   line-height: 28px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* -webkit-line-clamp: 2; */
   -webkit-box-orient: vertical;  
   overflow: hidden;
 }
