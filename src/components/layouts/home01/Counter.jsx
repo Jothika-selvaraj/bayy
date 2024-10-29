@@ -54,7 +54,7 @@ class Counter extends Component {
                                             <div className="count">
                                             <span className="counter h2">
                                               <CountUp end={data.title} enableScrollSpy />
-                                                <span style={{ color: '#F14D5D' }}>{data.suffix}</span>
+                                                <span style={{color :'#F6AE2D'}}>{data.suffix}</span>
                                             </span>
                                             </div>
                                             <p>{data.text}</p>

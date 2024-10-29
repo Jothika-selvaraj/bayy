@@ -102,10 +102,10 @@ const HeaderOne = () => {
                             </div>
 
                             <div className="header-search-bar d-none d-xl-block ms-4">
-                                <form action="#">
+                                {/* <form action="#">
                                     <input type="text" className="form-control" placeholder="Search for Course" />
                                     <Link to="#" className="search-submit"><i className="far fa-search"></i></Link>
-                             </form>
+                             </form> */}
                             </div>
                     
                             <nav className={ `site-navbar ms-auto ${ isMenuOpen ? 'menu-on': ''}` } >
