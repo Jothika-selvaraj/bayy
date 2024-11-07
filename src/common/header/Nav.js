@@ -16,27 +16,27 @@ const Nav = () => {
   const [menuItems, setMenuItems] = useState([
     {
       label: 'About',
-      link: '/about',
+      // link: '/about',
     },
     {
       label: 'Courses',
-      link: '/course-list',
+      // link: '/course-list',
     },
     {
       label: 'Blog',
-      link: '/blog',
+      // link: '/blog',
     },
     {
       label: 'Testimonials',
-      link: '/testimonials',
+      // link: '/testimonials',
     },
     {
       label: 'Pricing',
-      link: '/pricing',
+      // link: '/pricing',
     },
     {
       label: 'Contact',
-      link: '/contact',
+      // link: '/contact',
     },
   ]);
 
