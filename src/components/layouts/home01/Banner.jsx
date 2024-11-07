@@ -24,7 +24,7 @@ class Banner extends Component {
 
                     <div className="col-md-12 col-xl-6 col-lg-6">
                         <div className="banner-img-round mt-5 mt-lg-0 ps-5">
-                            <img src="assets/images/banner/banner_img2.jpg" alt="" className="img-fluid rounded-t-[10px] rounded-b-full"/>
+                            <img src="assets/images/banner/banner.png" alt="" className="img-fluid rounded-t-[10px] rounded-b-full"/>
                         </div>
                     </div>
                 </div>
