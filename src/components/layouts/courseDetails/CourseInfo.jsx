@@ -70,7 +70,7 @@ const CourseInfo = ( { data }) => {
                     </li>
                 </ul>
                 <div className="buy-btn">
-                    <button className="button button-enroll-course btn btn-main-2 rounded">
+                    <button className="button button-enroll-course btn btn-main rounded">
                         <i className="ri-shopping-cart-2-line me-2"></i> Enroll Course 
                     </button>
                 </div>

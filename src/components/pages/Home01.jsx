@@ -9,7 +9,8 @@ import Faq from '../layouts/home01/Faq';
 
 const HomeOne = () => {
     return (
-        <div className="home-page">       
+        <div className="home-page">  
+            
             <HeaderOne />
             <Banner />
             <Counter />
@@ -20,7 +21,8 @@ const HomeOne = () => {
             <CourseGridPopular />
             <Faq />
             <Review />
-            <Cta />    
+            <Cta />  
+            
             <FooterOne />  
         </div>
     )

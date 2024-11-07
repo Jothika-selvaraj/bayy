@@ -10,7 +10,7 @@ class Banner extends Component {
                 <div className="row align-items-center justify-content-center">
                     <div className="col-md-12 col-xl-6 col-lg-6">
                         <div className="banner-content  ">
-                            <span className="subheading" style={{color :'#F6AE2D'}}>Master Quran and Arabic, Step by Step</span>
+                            <span className="subheading" style={{color :'#F14D5D'}}>Master Quran and Arabic, Step by Step</span>
                             <h1>Arabic Quran Mastery</h1> 
                             <p className="mb-20">" Begin your journey with expert tutors and customized courses for every learner"
                             </p>
@@ -24,7 +24,7 @@ class Banner extends Component {
 
                     <div className="col-md-12 col-xl-6 col-lg-6">
                         <div className="banner-img-round mt-5 mt-lg-0 ps-5">
-                            <img src="assets/images/banner/banner_img.png" alt="" className="img-fluid"/>
+                            <img src="assets/images/banner/banner_img2.jpg" alt="" className="img-fluid rounded-t-[10px] rounded-b-full"/>
                         </div>
                     </div>
                 </div>

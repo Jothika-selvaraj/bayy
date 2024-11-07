@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'; 
 
 const Nav = () => {
   const containerRef = useRef(null);
@@ -14,49 +15,34 @@ const Nav = () => {
 
   const [menuItems, setMenuItems] = useState([
     {
-      label: 'Home',
-      link: '/#',
-    },
-    {
       label: 'About',
-      link: '/#',
+      link: '/about',
     },
     {
       label: 'Courses',
-      link: '/#',
-      // submenu: [
-      //   { label: 'Courses', link: '/course-1' },
-      //   { label: 'Course Grid 2', link: '/course-2' },
-      //   { label: 'Course Grid 3', link: '/course-3' },
-      //   { label: 'Course Grid 4', link: '/course-4' },
-      //   { label: 'Course List', link: '/course-list' },
-      //   { label: 'Course Single 1', link: '/course-details/1' },
-      //   { label: 'Course Single 2', link: '/course-details-two/2' },
-      // ],
-      // submenuOpen: false, 
+      link: '/course-list',
     },
     {
-      label: 'Discover',
-      link: '#',
-      submenu: [
-        { label: 'Blog', link: '/#' },
-        { label: 'Teachers', link: '/#' },
-        { label: 'Testimonials', link: '/#' },
-        { label: 'Career', link: '/#' },
-        { label: 'FAQ', link: '/#' },
-      ],
-      submenuOpen: false,
+      label: 'Blog',
+      link: '/blog',
+    },
+    {
+      label: 'Testimonials',
+      link: '/testimonials',
+    },
+    {
+      label: 'Pricing',
+      link: '/pricing',
     },
     {
       label: 'Contact',
-      link: '/#',
+      link: '/contact',
     },
   ]);
 
   const handleSubmenuToggle = (index) => {
     setMenuItems((prevMenuItems) => {
       const newMenuItems = [...prevMenuItems];
-      // Toggle the submenu open/close state
       newMenuItems[index].submenuOpen = !newMenuItems[index].submenuOpen;
       return newMenuItems;
     });
@@ -66,9 +52,7 @@ const Nav = () => {
     <ul className="primary-menu">
       {menuItems.map((item, index) => (
         <li key={index}>
-          <a href={item.link}>
-            {item.label}
-          </a>
+          <a href={item.link}>{item.label}</a>
 
           {item.submenu && (
             <>
@@ -91,6 +75,18 @@ const Nav = () => {
           )}
         </li>
       ))}
+
+       <li className="cart-shop-container">
+        <Link to="/#" className="cart-icon">
+          <i className="fa fa-shopping-cart"></i>Cart
+          {/* {cartItems > 0 && <span className="cart-badge">{cartItems}</span>} */}
+        </Link>
+        </li>
+        <li>
+        <Link to="/ecommerce" className="btn btn-main rounded" style={{color:'white'}}>
+          Shop
+        </Link>
+      </li>
     </ul>
   );
 };

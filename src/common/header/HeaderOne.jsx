@@ -77,7 +77,7 @@ const HeaderOne = () => {
                     <div className="container">
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="site-logo">
-                                <Link to="#">
+                                <Link to="/#">
                                     <img src={`${process.env.PUBLIC_URL}/assets/images/logo.jpg`} alt="Course Thumb" class="img-fluid"/>
                                 </Link>
                             </div>

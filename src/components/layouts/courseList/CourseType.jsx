@@ -42,12 +42,14 @@ const CourseType = ({ data, classes }) => {
                         </div>
                         <h3 className="course-title mb-40"> <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>{data.title}</Link> </h3>
                         <div className="course-meta d-flex align-items-center">
-                            <div className="author">
+                            {/* <div className="author">
                                 <img src={`${process.env.PUBLIC_URL}/assets/images/instructor/${instructorThumb}`} alt="" className="img-fluid"/>
                                 <a href="/">{data.instructor}</a>
-                            </div>
-                            <span className="students"><i className="far fa-user-alt"></i>{data.student} </span>
+                            </div> */}
+                            <span className="students">{data.student} </span>
                         </div>
+                        <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`} className="btn btn-main-outline btn-radius btn-sm">Learn More<i className="fa fa-long-arrow-right"></i></Link>
+
                     </div>
                 </div>
             </div>

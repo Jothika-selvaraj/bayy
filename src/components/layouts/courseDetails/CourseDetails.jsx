@@ -97,8 +97,7 @@ const CourseDetails = () => {
                         <div className="row">
                             <div className="col-lg-7 col-xl-8">   
                                 <div className="course-details-header mb-5 ">
-
-                                    <div className="course-meta-info mb-4">
+                                    {/* <div className="course-meta-info mb-4">
                                         <div className="d-flex align-items-center">
                                             <div className="author me-4">
                                                 <img src={`${process.env.PUBLIC_URL}/assets/images/instructor/${instructorThumb}`} alt="" className="img-fluid"/>
@@ -119,16 +118,15 @@ const CourseDetails = () => {
                                                 <span className="ms-2">({courseItem.review} Reviews)</span>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <h1 className="course-title">{courseItem.title}</h1>
+                                    </div> */}
+                                   
+                                    <h1 className="course-title" style={{fontSize : '30px', fontWeight: '700', color: '#F14D5D'}}>({courseItem.title})</h1>
                                 </div>
 
                                 <nav className="course-single-tabs learn-press-nav-tabs">
-
                                     <ul className="nav nav-tabs course-nav" role="tablist">
                                         <li className="nav-item">
-                                            <a href='demo' className={contentTab === 'overview' ? 'nav-link active' : 'nav-link'}
+                                            <a href='#' className={contentTab === 'overview' ? 'nav-link active' : 'nav-link'}
                                                 type="button"
                                                 aria-label="Overview"
                                                 onClick={() => handleTab('overview')}
@@ -137,7 +135,7 @@ const CourseDetails = () => {
                                             </a>
                                         </li>
                                         <li className="nav-item">
-                                            <a href='demo' 
+                                            <a href='#' 
                                                 className={contentTab === 'curriculum' ? 'nav-link active' : 'nav-link'}
                                                 type="button"
                                                 aria-label="Curriculum"
@@ -147,7 +145,7 @@ const CourseDetails = () => {
                                             </a>
                                         </li>
                                         <li className="nav-item">
-                                            <a  href='demo'
+                                            <a  href='#'
                                                 className={contentTab === 'instructor' ? 'nav-link active' : 'nav-link'}
                                                 type="button"
                                                 aria-label="Instructor"
@@ -158,7 +156,7 @@ const CourseDetails = () => {
                                         </li>
                                         <li className="nav-item">
                                             <a 
-                                            href='demo' className={contentTab === 'reviews' ? 'nav-link active' : 'nav-link'}
+                                            href='#' className={contentTab === 'reviews' ? 'nav-link active' : 'nav-link'}
                                                 type="button"
                                                 aria-label="Reviews"
                                                 onClick={() => handleTab('reviews')}

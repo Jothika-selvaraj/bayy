@@ -3,6 +3,8 @@ import { PageBanner,Features,Team,Review}  from '../layouts/about/index';
 import Layout from '../../common/Layout';
 import { Counter } from '../layouts/home01';
 import MisionVision from '../layouts/about/MisionVision';
+import { FaQ } from 'react-icons/fa6';
+import Faq from '../layouts/home01/Faq';
 
 
 const AboutMain = () => {
@@ -19,7 +21,8 @@ const AboutMain = () => {
                     <Features />
                     <MisionVision />
                     <Team />
-                    <Counter />
+                    <Faq />
+                   
                     <Review />
             </Layout>
         </div>

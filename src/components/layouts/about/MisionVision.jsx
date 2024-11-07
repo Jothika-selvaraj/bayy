@@ -50,7 +50,7 @@ const MissionVision = () => {
                 </button>
               </div>
 
-              <div className="p-4 border border-gray-100 rounded-lg ">
+              <div className="p-4 border border-red-100 rounded-lg ">
                 {activeTab === 'mission' ? (
                   <p className="text-lg text-gray-700">
                     Our mission is to create innovative solutions that empower individuals and organizations to achieve their goals.

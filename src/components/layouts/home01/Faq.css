@@ -1,0 +1,119 @@
+/* Container for the two-column layout */
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background: url('/public/assets/images/faq.jpg') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay */
+    background-blend-mode: overlay;
+  }
+  
+  /* Left side: Content section */
+  .faq-content {
+    width: 45%;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .faq-title {
+    font-size: 2.5rem;
+    color: #F14D5D;
+    font-weight: 700;
+  }
+  
+  .faq-title span {
+    color: #fff;
+    font-size: 1.2 rem;
+  }
+  
+  .faq-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #d7d7d7;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faq-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .faq-list li:before {
+    content: '→';
+    color: #e63946;
+    margin-right: 10px;
+  }
+  
+  .more-button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .more-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Right side: FAQ accordion section */
+  .faq-section {
+    width: 45%;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-question {
+    background-color: #fff;
+    color: #000;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .faq-question.active {
+    color: #F14D5D;
+  }
+  
+ 
+  
+  .faq-answer {
+    background-color: #F14D5D;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-container {
+      flex-direction: column;
+    }
+  
+    .faq-content, .faq-section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

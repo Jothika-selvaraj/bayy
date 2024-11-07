@@ -13,7 +13,7 @@ class CourseGrid extends Component {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-8">
-                                <p>Showing 1-6 of 8 results</p>
+                                <p>Showing 1-4 of 5 results</p>
                             </div>
             
                             <div className="col-lg-4">
@@ -29,17 +29,17 @@ class CourseGrid extends Component {
                 </div>
             
                 <div className="container">
-                    <div className="row ">
-                    {
-                        CourseItems.map((item) => (
-                            <div className="course-item col-lg-6 col-md-6" key={ item.id }>
-                                <CourseType data={item} />
-                            </div>
-                        ) )
-                    }
-                        
-                    </div>
+                      <div className="row">
+                       {
+                        CourseItems.slice(0, 5).map((item) => (
+                      <div className="course-item col-lg-6 col-md-6" key={item.id}>
+                       <CourseType data={item} />
+                      </div>
+                        ))
+                       }
+                      </div>
                 </div>
+
             </section>
 
         );

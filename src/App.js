@@ -24,6 +24,11 @@ import Register from './components/pages/Register';
 
 import ContactPage from './components/pages/ContactPage';
 import BlogPageOne from './components/pages/BlogPageOne';
+import EcommercePage from './components/layouts/ecommerce/EcommercePage';
+
+import Testimonials from './components/layouts/testimonials/Testimonials';
+import Pricing from './components/layouts/pricing/Pricing';
+
 
 
 function App() {
@@ -52,6 +57,13 @@ function App() {
 
               <Route exact path={`${process.env.PUBLIC_URL + '/contact'}`} element={<ContactPage/>}/>
               <Route exact path={`${process.env.PUBLIC_URL + '/blog'}`} element={<BlogPageOne/>}/>
+              
+              <Route exact path={`${process.env.PUBLIC_URL + '/ecommerce'}`} element={<EcommercePage />} />
+              <Route exact path={`${process.env.PUBLIC_URL + '/testimonials'}`} element={<Testimonials />} />
+
+              <Route exact path={`${process.env.PUBLIC_URL + '/pricing'}`} element={<Pricing />} />
+
+
 
            </Routes>
 
